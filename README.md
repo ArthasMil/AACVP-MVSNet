@@ -9,7 +9,7 @@ The code of the paper **Attention Aware Cost Volume Pyramid Based Multi-view Ste
 
 This project is inspired many previous MVS works, such as [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) and [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet). The **self-attention layer** and the **group wise correlation** are introduced in our network, aiming at improving the completeness and overall accuracy of 3D Reconstruction. This work is funded by National Natural Science Foundation of China (NSFC, No. 41801388).
 
-<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg" width="400" height="300" alt="The network structure of AACVP-MVSNet"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg" width=50% height=50% alt="The network structure of AACVP-MVSNet"/>
 
 If you find this project useful for your research, please cite:
 ```
