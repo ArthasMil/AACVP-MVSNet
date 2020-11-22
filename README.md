@@ -15,7 +15,7 @@ If you find this project useful for your research, please cite:
 ```
 @article{yu2020aacvpmvsnet,
   title={Attention Aware Cost Volume Pyramid Based Multi-view Stereo Network for 3D Reconstruction},
-  author={Yu, Anzhu and Guo, Wenyue and Liu, Bing and Chenm Xin and Wang, Xin and Cao, Xuefeng and Jiang, Bingchuan},
+  author={Yu, Anzhu and Guo, Wenyue and Liu, Bing and Chen Xin and Wang, Xin and Cao, Xuefeng and Jiang, Bingchuan},
   journal={arxiv},
   year={2020}
 }
