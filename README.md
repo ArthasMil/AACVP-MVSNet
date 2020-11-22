@@ -9,7 +9,7 @@ The code of the paper **Attention Aware Cost Volume Pyramid Based Multi-view Ste
 
 This project is inspired many previous MVS works, such as [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) and [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet). The **self-attention layer** and the **group wise correlation** are introduced in our network, aiming at improving the completeness and overall accuracy of 3D Reconstruction. This work is funded by National Natural Science Foundation of China (NSFC, No. 41801388).
 
-![The network structure of AACVP-MVSNet](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg)
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg" width="400" height="300" alt="The network structure of AACVP-MVSNet"/>
 
 If you find this project useful for your research, please cite:
 ```
@@ -33,13 +33,10 @@ The best result of our model is listed below as well as some previous works.
 
 Some results on BlendedMVS dataset is listed below.
 
-![Scene 1](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_1.jpg)
-
-![Scene 2](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_2.jpg)
-
-![Scene 3](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_3.jpg)
-
-![Scene 4](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_4.jpg)
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_1.jpg" width="400" height="300" alt="Scene 1"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_2.jpg" width="400" height="300" alt="Scene 2"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_3.jpg" width="400" height="300" alt="Scene 3"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_4.jpg" width="400" height="300" alt="Scene 4"/>
 
 ---
 
