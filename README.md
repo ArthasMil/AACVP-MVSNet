@@ -33,10 +33,10 @@ The best result of our model is listed below as well as some previous works.
 
 Some results on [BlendedMVS](https://github.com/YoYo000/BlendedMVS) dataset is listed below.
 
-<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_1.jpg" style="zoom:20%" alt="Scene 1"/>
-<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_2.jpg" style="zoom:20%" alt="Scene 2"/>
-<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_3.jpg" style="zoom:20%" alt="Scene 3"/>
-<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_4.jpg" style="zoom:20%" alt="Scene 4"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_1.jpg" style="zoom:80%" alt="Scene 1"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_2.jpg" style="zoom:80%" alt="Scene 2"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_3.jpg" style="zoom:80%" alt="Scene 3"/>
+<img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_4.jpg" style="zoom:80%" alt="Scene 4"/>
 
 ---
 
