@@ -7,9 +7,9 @@ The code of the paper **Attention Aware Cost Volume Pyramid Based Multi-view Ste
 
 ## 0. Introduction
 
-This project is inspired many previous MVS works, such as [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) and [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet). The **self-attention layer** and the **group wise correlation** are introduced in our network, aiming at improving the completeness and overall accuracy of 3D Reconstruction for UAV images. This work is funded by National Natural Science Foundation of China (NSFC, No. 41801388).
+This project is inspired many previous MVS works, such as [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) and [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet). The **self-attention layer** and the **group wise correlation** are introduced in our network, aiming at improving the completeness and overall accuracy of 3D Reconstruction. This work is funded by National Natural Science Foundation of China (NSFC, No. 41801388).
 
-![The network structure of AACVP-MVSNet](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg){:height="20%" width="20%"}
+![The network structure of AACVP-MVSNet](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg)
 
 If you find this project useful for your research, please cite:
 ```
@@ -31,6 +31,15 @@ The best result of our model is listed below as well as some previous works.
 | [CVP-MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | 0.296 | 0.406 | 0.351 | 
 | Ours | 0.353     | 0.299      | 0.326        |
 
+Some results on BlendedMVS dataset is listed below.
+
+![Scene 1](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_1.jpg)
+
+![Scene 2](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_2.jpg)
+
+![Scene 3](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_3.jpg)
+
+![Scene 4](https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/BlendedMVS_4.jpg)
 
 ---
 
@@ -54,17 +63,15 @@ The best result of our model is listed below as well as some previous works.
 
 Testing data(2G):
 
-Download our pre-processed DTU testing data from [here](https://drive.google.com/file/d/1rX0EXlUL4prRxrRu2DgLJv2j7-tpUD4D/view?usp=sharing) and extract it to `CVP_MVSNet/dataset/dtu-test-1200`.
+Download our pre-processed DTU testing data from [here](https://drive.google.com/file/d/1rX0EXlUL4prRxrRu2DgLJv2j7-tpUD4D/view?usp=sharing) and extract it to your own path.
 
-### 3. Install requirements
+### 3. Train the model
 
-`cd CVP_MVSNet`
-
-`pip3 install -r requirements.txt`
+`bash train.sh`
 
 ### 4. Generate depth map using our pre-trained model
 
-`sh eval.sh`
+`bash eval.sh`
 
 When finished, you can find depth maps in `outputs_pretrained` folder.
 
@@ -79,19 +86,19 @@ Install fusibile by `cmake .` and `make`, which will generate the executable at`
 
 Link fusibile executable into fusion folder (Note: You should modify FUSIBILE_EXE_PATH to the path to your fusibile executable)
 
-`ln -s FUSIBILE_EXE_PATH CVP_MVSNet/fusion/fusibile`
+`ln -s FUSIBILE_EXE_PATH ./fusion/fusibile`
 
 Install extra dependencies
 
-`pip2 install -r CVP_MVSNet/fusion/requirements_fusion.txt`
+`pip2 install -r ./fusion/requirements_fusion.txt`
 
 Use provided script to use fusibile to generate point clouds. 
 
-`cd CVP_MVSNet/fusion/`
+`cd ./fusion/`
 
-`sh fusion.sh`
+`bash fusion.sh`
 
-Use provided script to move generated point clouds into `outputs_pretrained/dtu_eval` folder
+Move the *final3D* files to output folder
 
 `python2 fusibile_to_dtu_eval.py`
 
