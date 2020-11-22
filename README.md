@@ -54,7 +54,7 @@ Some results on [BlendedMVS](https://github.com/YoYo000/BlendedMVS) dataset is l
 
 ### 1. Clone the source code
 
-`https://github.com/ArthasMil/AACVP-MVSNet.git`
+`git clone https://github.com/ArthasMil/AACVP-MVSNet.git`
 
 ### 2. Download testing dataset
 
