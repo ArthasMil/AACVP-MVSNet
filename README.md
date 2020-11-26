@@ -1,6 +1,8 @@
 # AACVP-MVSNet
 The code of the paper **Attention Aware Cost Volume Pyramid Based Multi-view Stereo Network for 3D Reconstruction** (AACVP-MVSNet)。
 
+The original paper could be found [here](https://arxiv.org/abs/2011.12722).
+
 ---
 ## NOTE: the code would be open source as soons as it's accpeted.
 
