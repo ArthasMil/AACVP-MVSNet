@@ -13,11 +13,13 @@ This project is inspired many previous MVS works, such as [MVSNet](https://githu
 
 If you find this project useful for your research, please cite:
 ```
-@article{yu2020aacvpmvsnet,
-  title={Attention Aware Cost Volume Pyramid Based Multi-view Stereo Network for 3D Reconstruction},
-  author={Yu, Anzhu and Guo, Wenyue and Liu, Bing and Chen Xin and Wang, Xin and Cao, Xuefeng and Jiang, Bingchuan},
-  journal={arxiv},
-  year={2020}
+@article{yu2020attention,
+      title={Attention Aware Cost Volume Pyramid Based Multi-view Stereo Network for 3D Reconstruction}, 
+      author={Anzhu Yu and Wenyue Guo and Bing Liu and Xin Chen and Xin Wang and Xuefeng Cao and Bingchuan Jiang},
+      year={2020},
+      eprint={2011.12722},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
 }
 ```
 The best result of our model is listed below as well as some previous works.
@@ -28,8 +30,8 @@ The best result of our model is listed below as well as some previous works.
 | [PointMVSNet](https://github.com/callmeray/PointMVSNet) |  0.361 | 0.421 | 0.391 | 
 | [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | 0.4492 | 0.3796 | 0.4144 | 
 | [CasMVSNet](https://github.com/alibaba/cascade-stereo/tree/master/CasMVSNet) | 0.325 | 0.385 | 0.355 |
-| [CVP-MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | 0.296 | 0.406 | 0.351 | 
-| Ours | 0.353     | 0.299      | 0.326        |
+| [CVP-MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | **0.296** | 0.406 | 0.351 | 
+| Ours | 0.353     | **0.299**      | **0.326**        |
 
 Some results on [BlendedMVS](https://github.com/YoYo000/BlendedMVS) dataset is listed below.
 
