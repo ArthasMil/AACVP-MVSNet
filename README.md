@@ -4,7 +4,7 @@ The code of the paper **Attention Aware Cost Volume Pyramid Based Multi-view Ste
 The original paper could be found [here](https://arxiv.org/abs/2011.12722).
 
 ---
-## NOTE: the code would be open source as soons as it's accpeted.
+## NOTE: the code of AACVP-MVSNet on DTU dataset along with pretrained model would be open-source as soons as our paper is accpeted.
 
 
 ## 0. Introduction
@@ -30,7 +30,7 @@ The best result of our model is listed below as well as some previous works.
 |-----------|-----------|------------|--------------|
 | [PruMVSNet](https://www.sciencedirect.com/science/article/abs/pii/S0924271620301763) | 0.495 | 0.433   |  0.464        |
 | [PointMVSNet](https://github.com/callmeray/PointMVSNet) |  0.361 | 0.421 | 0.391 | 
-| [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | 0.4492 | 0.3796 | 0.4144 | 
+| [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | 0.449 | 0.380 | 0.414 | 
 | [CasMVSNet](https://github.com/alibaba/cascade-stereo/tree/master/CasMVSNet) | 0.325 | 0.385 | 0.355 |
 | [CVP-MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | **0.296** | 0.406 | 0.351 | 
 | Ours | 0.353     | **0.299**      | **0.326**        |
