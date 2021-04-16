@@ -1,27 +1,30 @@
 # AACVP-MVSNet
 The code of the paper **Attention Aware Cost Volume Pyramid Based Multi-view Stereo Network for 3D Reconstruction** (AACVP-MVSNet)。
 
-The original paper could be found [here](https://arxiv.org/abs/2011.12722).
+The original paper could be found [here](https://arxiv.org/abs/2011.12722) (Arxiv) and [here](https://www.sciencedirect.com/science/article/pii/S0924271621000794) (Elsevier).
 
 ---
-## NOTE: the code of AACVP-MVSNet on DTU dataset along with pretrained model would be open-source as soons as our paper is accpeted.
+### This work strongly strongly borrows the insights from the previous MVS approaches. More details in the *Acknowledge* part.
 
 
 ## 0. Introduction
 
-This project is inspired many previous MVS works, such as [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) and [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet). The **self-attention layer** and the **group wise correlation** are introduced in our network, aiming at improving the completeness and overall accuracy of 3D Reconstruction. This work is funded by National Natural Science Foundation of China (NSFC, No. 41801388).
+This project is inspired many previous MVS works, such as [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) and [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet). The **self-attention layer** and the **group wise correlation** are introduced in our network, aiming at improving the completeness and overall accuracy of 3D Reconstruction. 
 
 <img src="https://github.com/ArthasMil/AACVP-MVSNet/blob/main/imgs/NetwordStructure.jpg" width="646" height="234" alt="The network structure of AACVP-MVSNet"/>
 
 If you find this project useful for your research, please cite:
 ```
-@article{yu2020attention,
-      title={Attention Aware Cost Volume Pyramid Based Multi-view Stereo Network for 3D Reconstruction}, 
-      author={Anzhu Yu and Wenyue Guo and Bing Liu and Xin Chen and Xin Wang and Xuefeng Cao and Bingchuan Jiang},
-      year={2020},
-      eprint={2011.12722},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+@article{YU2021448,
+title = {Attention aware cost volume pyramid based multi-view stereo network for 3D reconstruction},
+journal = {ISPRS Journal of Photogrammetry and Remote Sensing},
+volume = {175},
+pages = {448-460},
+year = {2021},
+issn = {0924-2716},
+doi = {https://doi.org/10.1016/j.isprsjprs.2021.03.010},
+url = {https://www.sciencedirect.com/science/article/pii/S0924271621000794},
+author = {Anzhu Yu and Wenyue Guo and Bing Liu and Xin Chen and Xin Wang and Xuefeng Cao and Bingchuan Jiang},
 }
 ```
 The best result of our model is listed below as well as some previous works.
@@ -32,8 +35,8 @@ The best result of our model is listed below as well as some previous works.
 | [PointMVSNet](https://github.com/callmeray/PointMVSNet) |  0.361 | 0.421 | 0.391 | 
 | [MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | 0.449 | 0.380 | 0.414 | 
 | [CasMVSNet](https://github.com/alibaba/cascade-stereo/tree/master/CasMVSNet) | 0.325 | 0.385 | 0.355 |
-| [CVP-MVSNet](https://github.com/xy-guo/MVSNet_pytorch) | **0.296** | 0.406 | 0.351 | 
-| Ours | 0.353     | **0.299**      | **0.326**        |
+| [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet) | **0.296** | 0.406 | 0.351 | 
+| Ours(BEST) | 0.353     | **0.299**      | **0.326**        |
 
 Some results on [BlendedMVS](https://github.com/YoYo000/BlendedMVS) dataset is listed below.
 
@@ -104,3 +107,15 @@ Move the *final3D* files to output folder
 `python2 fusibile_to_dtu_eval.py`
 
 Evaluate the point clouds using the [DTU evaluation code](http://roboimagedata.compute.dtu.dk/?page_id=36).
+
+### 6. Pre-trained model
+The pretrained model is in [BaiduYun](https://pan.baidu.com/s/1Y-T2iEkc2DO6pf8d6p5I3w) (code:pse8). Put it in your folder and modify the 
+path in eval_AACVPMVSNet.sh.
+
+## Acknowledge
+This work is supported by National Natural Science Foundation of China (No.41801388 and No.41801319).
+
+This repository is MAINLY based on the [CVP-MVSNet](https://github.com/JiayuYANG/CVP-MVSNet) repository by Jiayu Yang. Many thanks to Jiayu Yang for the great project!
+
+The fusion implementation of T&T dataset is not based on the Fusibile toolbox, we use the mixed prob. masks at different levels and borrowed the insights from [D2HC-RMVSNet](https://github.com/yhw-yhw/D2HC-RMVSNet) and [CasMVSNet_pl](https://github.com/kwea123/CasMVSNet_pl).
+Thanks Hongwei Yi and Kwea123 for their works.
